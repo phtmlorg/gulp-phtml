@@ -1,0 +1,57 @@
+{
+  "name": "gulp-phtml",
+  "version": "2.0.0",
+  "description": "Use pHTML with Gulp",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "phtmlorg/gulp-phtml",
+  "homepage": "https://github.com/phtmlorg/gulp-phtml#readme",
+  "bugs": "https://github.com/phtmlorg/gulp-phtml/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run test:js && npm run test:tape",
+    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet",
+    "test:tape": "ava"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "phtml": "^4.0.0",
+    "plugin-error": "^1.0.1",
+    "through2": "^3.0.1"
+  },
+  "devDependencies": {
+    "@phtml/self-closing": "^3.0.0",
+    "ava": "^1.4.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "p-event": "^4.1.0",
+    "pre-commit": "^1.2.2",
+    "vinyl": "^2.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "impliedStrict": true,
+      "sourceType": "module"
+    },
+    "extends": "eslint:recommended"
+  },
+  "keywords": [
+    "phtml",
+    "html",
+    "gulp",
+    "gulpplugin"
+  ]
+}
